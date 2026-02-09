@@ -1,0 +1,537 @@
+
+/* ================= MEDIA QUERIES ================= */
+
+/* ---------- Large Desktops (≤1400px) ---------- */
+@media screen and (max-width: 1400px) {
+  .header-container {
+    padding: 2rem 4rem;
+  }
+
+  .hero-section,.text-section {
+    padding: 2rem 4rem;
+  }
+
+  .hero-container {
+    gap: 50px;
+  }
+
+  .info-wrapper {
+    gap: 50px;
+  }
+
+  .section-heading {
+    font-size: 32px;
+  }
+
+  .approach-inner {
+    padding: 2rem 4rem;
+  }
+
+  .section-heading {
+    font-size: 36px;
+  }
+
+  .approach-cards {
+    gap: 28px;
+  }
+
+  
+   .footer-container {
+    padding: 2rem 4rem;
+    gap: 50px;
+  }
+}
+
+/* Laptops ≤1200px */
+@media screen and (max-width: 1200px) {
+  .header-container {
+    padding: 1.8rem 0.5rem;
+  }
+
+  .nav-links{
+    gap: 12px;
+  }
+
+    .hero-section,.text-section {
+    padding: 1.8rem 3.5rem;
+  }
+
+  .hero-content h1 {
+    font-size: 46px;
+  }
+
+  .hero-container {
+    gap: 40px;
+  }
+
+   .info-wrapper {
+    gap: 40px;
+  }
+
+  .section-heading {
+    font-size: 30px;
+  }
+
+  .section-text,.text-section li {
+    font-size: 15px;
+  }
+
+  .info-link {
+    font-size: 15px;
+    padding: 0.9rem 1.8rem;
+  }
+
+   .approach-inner {
+    padding: 2rem 3.5rem;
+  }
+
+  .approach-card h3 {
+    font-size: 20px;
+  }
+
+  .approach-card p {
+    font-size: 15px;
+  }
+
+   .footer-container {
+    grid-template-columns: 1.2fr 1fr 1fr 1fr;
+    gap: 40px;
+    padding: 2rem 3rem;
+  }
+
+  .footer-col h3 {
+    font-size: 20px;
+  }
+
+  .footer-about p {
+    font-size: 15px;
+  }
+}
+
+/* Tablets landscape ≤992px - show hamburger */
+@media screen and (max-width: 992px) {
+  .header-container {
+    padding: 1.5rem 2.5rem;
+    justify-content: space-between;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .hamburger-btn {
+    display: block;
+  }
+
+  .sidebar {
+  position: fixed; 
+  top: 0;
+  left: 0; 
+  width: 280px;
+  height: 100%;
+  background: white;
+  z-index: 3000; 
+  box-shadow: 5px 0 30px rgba(0, 0, 0, 0.15);
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.sidebar .logo {
+  margin-bottom: 1rem;
+}
+
+.sidebar .nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  font-family: var(--baloo-font);
+  align-items: flex-start;
+  text-align: left
+}
+
+.sidebar .nav-links p {
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.hero-section,.text-section {
+    padding: 1.5rem 3rem;
+  }
+
+  .hero-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .hero-content{
+    text-align: center;
+    margin-bottom: 10rem;
+  }
+
+  .hero-content h1 {
+    font-size: 40px;
+  }
+
+  .hero-content p {
+    max-width: 100%;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .cloud-1 {
+    top: 8%;
+    left: -100px;
+    width: 120px;
+  }
+
+  .cloud-2 {
+    bottom: 8%;
+    right: -60px;
+    width: 150px;
+  }
+
+  .hero-image {
+    width: 80%;
+      display: flex;
+   align-items: center;
+   margin: auto;
+  }
+
+   .info-wrapper {
+    flex-direction: column;
+    gap: 35px;
+    text-align: center;
+  }
+
+  .info-wrapper.reverse {
+    flex-direction: column;
+  }
+
+  .info-image img {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .section-heading {
+    font-size: 28px;
+  }
+
+  .section-text,.text-section li {
+    font-size: 14px;
+  }
+
+  .info-link {
+    font-size: 14px;
+    padding: 0.8rem 1.5rem;
+  }
+
+   .approach-inner {
+    padding: 2rem 3rem;
+  }
+
+  .approach-cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .approach-card h3 {
+    font-size: 18px;
+  }
+
+  .approach-card p {
+    font-size: 14px;
+  }
+
+   .footer-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding: 2rem;
+  }
+
+  .footer-contact .location-icon {
+    font-size: 48px;
+  }
+
+  .footer-col iframe {
+    height: 180px;
+  }
+
+  .footer-contact .location-icon {
+  font-size: 26px;       
+}
+
+  .star{
+    display: none;
+  }
+}
+
+/* Small tablets ≤768px */
+@media screen and (max-width: 768px) {
+  .header-container {
+    padding: 1rem 2rem;
+  }
+
+  .logo img {
+    height: 42px;
+  }
+
+  .sidebar {
+    width: 260px;
+    padding: 2rem 1.5rem;
+  }
+
+   .hero-section,.text-section {
+    padding: 1rem 2rem;
+    margin-top: 6rem;
+  }
+
+  .hero-section{
+    padding-bottom: 6rem;
+  }
+
+  .hero-content h1 {
+    font-size: 32px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .primary-btn,
+  .secondary-btn {
+    padding: 12px 20px;
+    font-size: 15px;
+  }
+
+  .cloud-1 {
+    top: 6%;
+    left: -80px;
+    width: 100px;
+  }
+
+  .cloud-2 {
+    bottom: 6%;
+    right: -50px;
+    width: 120px;
+  }
+
+  .hero-image {
+    width: 80%;
+     display: flex;
+   align-items: center;
+   margin: auto;
+  }
+
+   .info-section {
+    padding: 1rem 2rem;
+  }
+
+  .info-wrapper {
+    gap: 25px;
+  }
+
+  .section-heading {
+    font-size: 26px;
+  }
+
+  .section-text,.text-section li {
+    font-size: 13px;
+  }
+
+  .info-link {
+    font-size: 13px;
+    padding: 0.7rem 1.3rem;
+  }
+
+  .approach-inner {
+    padding: 2rem 2rem;
+  }
+
+  .approach-cards {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .approach-card h3 {
+    font-size: 17px;
+  }
+
+  .approach-card p {
+    font-size: 13px;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    text-align: center;
+  }
+
+    .footer-contact .location-icon {
+  font-size: 20px;      
+}
+
+  .footer-col h3::after{
+    display: none;
+  }
+
+  .footer-social{
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-contact li {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-cloud {
+   display: none;
+  }
+
+  .footer-col li{
+    margin-bottom: 1.5rem !important;
+  }
+}
+
+/* Mobile ≤576px */
+@media screen and (max-width: 576px) {
+  .header-container {
+    padding: 0.8rem 1rem;
+  }
+
+  .sidebar {
+    width: 240px;
+    padding: 1.5rem 1rem;
+  }
+
+  .sidebar .nav-links p {
+    font-size: 15px;
+  }
+
+    .hero-section {
+    padding: 0.8rem 1rem;
+    margin-top: 5rem;
+  }
+
+    .hero-section{
+    padding-bottom: 6rem;
+  }
+
+
+  .text-section{
+     padding: 0.8rem 1rem;
+  }
+
+  .hero-content h1 {
+    font-size: 28px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .primary-btn,
+  .secondary-btn {
+    padding: 10px 18px;
+    font-size: 14px;
+  }
+
+  .cloud-1 {
+    top: 5%;
+    left: -60px;
+    width: 90px;
+  }
+
+  .cloud-2 {
+    bottom: 5%;
+    right: -40px;
+    width: 100px;
+  }
+
+  .hero-image {
+    width: 75%;
+   display: flex;
+   align-items: center;
+   margin: auto;
+  }
+
+  .info-section {
+    padding: 0.8rem 1rem;
+  }
+
+  .info-wrapper {
+    gap: 20px;
+  }
+
+  .section-heading {
+    font-size: 22px;
+  }
+
+  .section-text,.text-section li {
+    font-size: 12px;
+  }
+
+  .info-link {
+    font-size: 12px;
+    padding: 0.6rem 1rem;
+  }
+
+  .info-image img {
+    width: 100%;
+  }
+
+  .approach-inner {
+    padding: 1.5rem 1rem;
+  }
+
+  .approach-card h3 {
+    font-size: 16px;
+  }
+
+  .approach-card p {
+    font-size: 12px;
+  }
+
+  .approach-img img {
+    height: 200px;
+  }
+
+    .footer-container {
+    padding: 1.5rem;
+  }
+
+  .footer-logo {
+    height: 50px;
+    margin-bottom: 15px;
+  }
+
+  .footer-col h3 {
+    font-size: 18px;
+  }
+
+  .footer-about p {
+    font-size: 14px;
+  }
+
+  .footer-col iframe {
+    height: 150px;
+  }
+
+  .footer-cloud {
+    width: 120px;
+    height: 70px;
+    bottom: 15px;
+  }
+
+  .footer-bottom p {
+    font-size: 14px;
+  }
+}
